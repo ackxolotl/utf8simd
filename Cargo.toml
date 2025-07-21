@@ -1,0 +1,17 @@
+[package]
+name = "utf8simd"
+version = "0.1.0"
+edition = "2024"
+description = "Fast UTF-8 validation in Rust"
+repository = "https://github.com/ackxolotl/utf8simd"
+categories = ["text-processing", "encoding", "no-std"]
+license = "MIT"
+
+[dependencies]
+
+[dev-dependencies]
+criterion = { version = "0.6", features = ["html_reports"] }
+
+[[bench]]
+name = "utf8simd"
+harness = false
